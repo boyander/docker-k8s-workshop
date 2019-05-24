@@ -1,0 +1,14 @@
+{
+  "name": "app-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@faable/flogg": "^1.1.5",
+    "esm": "^3.2.25",
+    "express": "^4.17.0"
+  },
+  "scripts": {
+    "dev": "DEBUG=app-sample:* node -r esm app.js"
+  }
+}
