@@ -1,0 +1,18 @@
+version: "3"
+services:
+  app-sample:
+    build: .
+    ports:
+      - "5555:5555"
+    environment:
+      - PORT=5555
+      - DBURL=mongodb://database/app-sample-compose
+    depends_on:
+      - database
+    entrypoint: ./wait-for-it.sh database:27017 -- npm run dev
+    volumes:
+      - ./src:/app/src
+  database:
+    image: mongo
+    volumes:
+      - ./mongodata:/data/db

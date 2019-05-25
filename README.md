@@ -16,6 +16,7 @@
   - Portable deployment across machines. Docker defines a format for bundling an application and all its dependencies into a single object called a container.
 
 - Container Images.
+  - CMD vs Entrypoint: https://medium.freecodecamp.org/docker-entrypoint-cmd-dockerfile-best-practices-abc591c30e21
 - Create your image. `Dockerfile` basics
   - Docker commands `build`, `run`, `push`, `pull`
 - Docker volumes
@@ -43,7 +44,14 @@
 - K8s architecture and fundamentals
 - Minikube - https://kubernetes.io/docs/setup/minikube/#installation
   - https://stackoverflow.com/questions/45002364/how-to-upgrade-minikube
+  - Dashboard
+  - Minikube own registry
+    - minikube start
+    - minikube dashboard
+    - minikube addons enable registry
+  - Other registry providers: Amazon ECR, https://aws.amazon.com/ecr/
 - Pods, Deployments and Services
+- The `kubectl` cli
 - Deploy your `Dockerfile` in `k8s`
 - ConfigMap
 - K8s, apply change when configmap changes, reactive changes
@@ -59,3 +67,8 @@
 - https://cloud.google.com/knative/
 - https://kubernetes.io/
 - https://www.terraform.io/
+
+## Other interesting things
+
+- EFK Stack to monitor kubernetes logs. `minikube addons enable efk`
+- https://github.com/jetstack/cert-manager
