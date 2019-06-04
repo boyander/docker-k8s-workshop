@@ -72,3 +72,4 @@
 
 - EFK Stack to monitor kubernetes logs. `minikube addons enable efk`
 - https://github.com/jetstack/cert-manager
+- https://alexanderzeitler.com/articles/enabling-the-kubernetes-dashboard-for-digitalocean-kubernetes/
