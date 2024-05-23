@@ -11,7 +11,7 @@
     "nodemon": "^1.19.0"
   },
   "scripts": {
-    "start": "DEBUG=app-sample:* node -r esm app.js",
-    "dev": "DEBUG=app-sample:* nodemon -r esm app.js"
+    "start": "DEBUG=app-sample:* node app.js",
+    "dev": "DEBUG=app-sample:* nodemon app.js"
   }
 }

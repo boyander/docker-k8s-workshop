@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-sample-kirbic
+spec:
+  containers:
+    - name: api
+      image: boyander/app-sample:v1
+      imagePullPolicy: Always
+      ports:
+        - containerPort: 3000

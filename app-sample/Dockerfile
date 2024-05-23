@@ -1,6 +1,6 @@
-FROM node:12.3.1-alpine
+FROM node
 ADD ./ /app
 WORKDIR /app
-RUN yarn install
+RUN npm i
 EXPOSE 3000
-CMD ["npm","start"]
+CMD ["/bin/bash","-c","npm run start"]

@@ -1,14 +1,17 @@
-import express from "express";
-import { log, setLog } from "@faable/flogg";
-import { sample } from "lodash";
+const express = require("express");
+const { log, setLog } = require("@faable/flogg");
+const { sample } = require("lodash");
 
 setLog("app-sample");
 
 const app = express();
 
+let selected = sample(["Lisa", "Bart", "Carapapel", "Dr. Flink"]);
+console.log(`Selected name: ${selected}`);
+
 app.get("/", (req, res) => {
   res.json({
-    letter: sample(["Lisa", "Bart", "Carapapel", "Dr. Flink"])
+    selected,
   });
 });
 
