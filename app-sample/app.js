@@ -16,4 +16,4 @@ app.get("/", (req, res) => {
 });
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => log(`🔥Ready on port ${port}`));
+app.listen({ host: "0.0.0.0", port });
