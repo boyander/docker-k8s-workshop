@@ -8,7 +8,7 @@
     "esm": "^3.2.25",
     "express": "^4.17.0",
     "lodash": "^4.17.11",
-    "nodemon": "^1.19.0"
+    "nodemon": "^3.1.0"
   },
   "scripts": {
     "start": "DEBUG=app-sample:* node app.js",
