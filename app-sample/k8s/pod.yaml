@@ -2,6 +2,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: app-sample-kirbic
+  labels:
+    app: example
 spec:
   containers:
     - name: api
